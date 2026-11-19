@@ -73,8 +73,10 @@ class PokemonBag
     @pockets[target_pocket] ||= []
     quantity = ItemStorageHelper.quantity(@pockets[source_pocket], item_data.id)
     return true if quantity == 0
-    return false if !add_to_pocket(item_data, target_pocket, quantity)
-    if EW_Favorite_Bag_Pocket_Settings::FAVORITE_POCKET_SYSTEM_MOVE #if clone mode is on, it will not remove the item from the source pocket, but if clone mode is off, it will remove the item from the source pocket
+	if EW_Favorite_Bag_Pocket_Settings::FAVORITE_POCKET_SYSTEM_MOVE || favorite #if clone mode is on it will add the item back to the orginal pocket if it's off then it will not so to avoide duplications
+		return false if !add_to_pocket(item_data, target_pocket, quantity)
+	end
+    if !favorite || EW_Favorite_Bag_Pocket_Settings::FAVORITE_POCKET_SYSTEM_MOVE #if clone mode is on, it will not remove the item from the source pocket, but if clone mode is off, it will remove the item from the source pocket
       return false if !ItemStorageHelper.remove(@pockets[source_pocket], item_data.id, quantity)
     end
     return true
