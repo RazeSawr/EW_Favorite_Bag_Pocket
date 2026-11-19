@@ -31,7 +31,7 @@ module EW_Favorite_Bag_Pocket_Settings
   # This is the index of the Favorite pocket in the bag, this is in case you have multiple pockets, plugins/addons 
   # if you do you might need to change this to the correct pocket number, (key items is 8 so add 1 everytime you press right until you get to the Favorite pocket) 
   # you are also gonna need to change the graphics in Graphics/UI/Bag/ to match the new index
-  FAVORITE_POCKET_NUMBER = 10
+  FAVORITE_POCKET_NUMBER = 9
 
   # PS THIS SCRIPT DOES NOT SORT THE ITEM, SO IF YOU REMOVE AN ITEM FROM THE FAVORITE POCKET, IT WILL NOT BE SORTED BACK INTO ITS ORIGINAL POSITION BUT AT THE BOTTOM OF IT'S ORIGINAL POCKET
   # this plugin is not made with the thoughts of other bag plugins in mind, so if you have other bag plugins that change the way the bag works, this plugin might not work with them, and you might need to edit the code to make it work with them.
