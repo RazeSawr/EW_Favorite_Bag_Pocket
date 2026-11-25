@@ -33,6 +33,23 @@ module EW_Favorite_Bag_Pocket_Settings
   # you are also gonna need to change the graphics in Graphics/UI/Bag/ to match the new index
   FAVORITE_POCKET_NUMBER = 9
 
+  #Background colour at the top of the screen, and uses Hex codes values, default is #9B02F0
+  GRADIENT_TOP = "#9B02F0"
+  # Background colour at the bottom of the screen, and uses Hex codes values, default is #00137F
+  GRADIENT_BOTTOM = "#00137F"
+
+  #together the Gradient top and bottom colours create a gradient effect, aka it gradually changes from the top colour to the bottom colour, 
+  #if you want a solid colour, just set both to the same colour
+
+  #Number of tiny round dots on screen aka small stars default is 30
+  FAR_COUNT = 30
+
+  #Number of sparkly stars on screen aka big stars default is 10
+  SPARKLE_COUNT = 10
+
+  #the stars randomy picks colors from this array, and uses Hex codes values, default is ["#ffea00", "#1aff00", "#0011ff"]
+  STAR_COLORS = ["#FFFFFF", "#DCEBFF", "#FFF0C8"]
+
   # PS THIS SCRIPT DOES NOT SORT THE ITEM, SO IF YOU REMOVE AN ITEM FROM THE FAVORITE POCKET, IT WILL NOT BE SORTED BACK INTO ITS ORIGINAL POSITION BUT AT THE BOTTOM OF IT'S ORIGINAL POCKET
   # this plugin is not made with the thoughts of other bag plugins in mind, so if you have other bag plugins that change the way the bag works, this plugin might not work with them, and you might need to edit the code to make it work with them.
 end
