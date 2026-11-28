@@ -1,6 +1,6 @@
 #-----------------
 # Background animation for the Favorite pocket.
-# ... I will be honest, i diden't write this code, i commisioned it from LackDeJurane/Issei,nce, 
+# ... I will be honest, i diden't write this code, i commisioned it from LackDeJurane/Issei, 
 # and i don't know how it works in it's entiery, but it works, 
 # so if you want to change the animation, or have some questions/suggestions/concerns you will have to ask him for it (or at the very least most likely i will just forward your questions to him) 
 #-----------------
